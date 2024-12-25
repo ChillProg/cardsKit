@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+	font-family: "Source Code Pro", monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	background-color: #272a2b;
+	columns: 310px;
+	gap: 16px;
+	padding: 32px 64px;
+}
+
+body>* {
+	break-inside: avoid;
+	margin-bottom: 16px;
+}
+
+.card {
+	margin-left: auto;
+	margin-right: auto;
+	width: 310px;
+	height: max-content;
+	background-color: white;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.icon {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background-color: #DEDEDE;
+}
+
+.headline {
+	font-size: 18px;
+}
+
+.paragraph {
+	font-size: 14px;
+	color: #666666;
+}
+
+.button {
+	background-color: #433C3C;
+	border-radius: 12px;
+	color: white;
+	padding: 6px 12px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.alt-button{
+	border-radius: 12px;
+	padding: 6px 12px;
+	font-size: 12px;
+	border: solid 1px #433C3C;
+	cursor: pointer;
+}
+
+.subtitle {
+	font-size: 14px;
+	color: #666666;
+}
+
+.small-icon {
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	background-color: #DEDEDE;
+	margin-left: auto;
+}
+
+.card-1 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.card-1 .paragraph {
+	text-align: center;
+}
+
+.card-2 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-2 .vertical-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-2 .part {
+	font-size: 14px;
+	color: #666666;
+}
+
+.card-2 .horizontal-footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 16px;
+}
+
+.card-3 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: relative;
+}
+
+.card-3 .image-container {
+	width: 100%;
+	height: 200px;
+	background-color: #DEDEDE;
+}
+
+.card-3 .content-container {
+	padding: 24px;
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-3 .content-container div:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-3 .content-container .separator {
+	width: 100%;
+	height: 1px;
+	background-color: #C4C4C4;
+}
+
+.card-3 .content-container .horizontal-footer {
+	display: flex;
+	justify-content: flex-start;
+	gap: 16px;
+	margin-top: 8px;
+}
+
+.card-3 .button {
+	margin-right: auto;
+}
+
+.card-4 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-4 .horizontal-header {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.card-4 .horizontal-header div {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-5 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.card-5 .horizontal-footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 16px;
+}
+
+.card-6 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-6 .content-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.card-6 .content-container .item {
+	width: 100%;
+	height: 120px;
+	border-radius: 12px;
+	background-color: #DEDEDE;
+}
+
+.card-7 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-7 .button {
+	margin-left: auto;
+}
+
+.card-8 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: relative;
+}
+
+.card-8 .image-container {
+	width: 100%;
+	height: 200px;
+	background-color: #DEDEDE;
+}
+
+.card-8 .image-container .button {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+
+.card-8 .content-container {
+	padding: 24px;
+	padding-top: 0;
+}
+
+.card-9 {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-9 span {
+	padding: 24px;
+	font-size: 18px;
+	color: #272a2b;
+}
+
+.card-9 .extrabig-content {
+	background-color: #DEDEDE;
+	width: 100%;
+	height: 300px;
+}
+
+.card-10 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.card-10 .horizontal-header {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+}
+
+.card-10 .horizontal-header .item {
+	height: 40px;
+	width: 40px;
+	border-radius: 8px;
+	background-color: #DEDEDE;
+}
+
+.card-10 .paragraph {
+	text-align: center;
+}
+
+.card-11 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-11 .horizontal-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 24px;
+	padding-bottom: 0px;
+}
+
+.card-11 .horizontal-header .close-icon {
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background-color: #DEDEDE;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.card-11 .horizontal-header div {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.card-11 .horizontal-header div div {
+	flex-direction: column;
+	gap: 0px;
+	align-items: flex-start;
+}
+
+.card-11 .image-container {
+	width: 100%;
+	height: 200px;
+	background-color: #DEDEDE;
+}
+
+.card-11 .content-container {
+	padding: 24px;
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-11 .horizontal-footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 16px;
+}
+
+.card-12 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-12 .progress {
+	width: 100%;
+	height: 5px;
+	background-color: #DEDEDE;
+}
+
+.card-12 .progress .bar {
+	width: 95%;
+	height: 100%;
+	background-color: #433C3C;
+}
+
+.card-12 .progress-number {
+	font-size: 12px;
+	color: #666666;
+	opacity: 0.8;
+}
+
+.card-12 .button {
+	margin-right: auto;
+}
+
+.card-13 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-13 .big-image {
+	width: 100%;
+	height: 150px;
+	border-radius: 12px;
+	background-color: #DEDEDE;
+}
+
+.card-14 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.card-14 .vertical-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-14 .item {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.card-14 .item .number {
+	min-width: 32px;
+	height: 32px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #433C3C;
+	border-radius: 50%;
+	background-color: #DEDEDE;
+}
+
+.card-15 {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	border-left: solid #3C3C43 16px;
+}
+
+.card-15 .horizontal-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 12px;
+}
+
+.card-15 .horizontal-header .small-icon {
+	margin: 0;
+}
